@@ -33,7 +33,7 @@
         {{this.taco_name}}
         {{this.shell}}
         <button class="change-pickUP" data-id={{this.id}} data-newPickUp={{this.pickUp}}>
-          {{#if this.pickUp}}Not PickUp!{{else}}Picked UP!{{/if}}
+          Picked UP!
         </button>
       </li>
       {{/unless}}
@@ -43,13 +43,11 @@
   </div>
 
 </div>
-
+6
 <script>
   $(function () {
     $(".change-pickUP").on("click", function (event) {
       var id = $(this).data("id");
-      {{!-- var newPickUp = $(this).data("newPickUp"); --}}
-
       var newPickUpState = {
         pickUp: 1
       };
