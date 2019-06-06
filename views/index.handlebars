@@ -17,8 +17,14 @@
   <div class="col col-sm-4 col-t-4 col-d-4">
     <h2>Add a Taco Order:</h2>
     <form class="orderInfo">
-      <input type="text" id="taco" name="name"></input>
-      <input type="text" id="tacoShell" name="shell"></input>
+      <div class ="tacoOrder">
+      <lable>Taco Name </lable><input type="text" id="taco" name="name"></input>
+      </div>
+      <br>
+      <div class ="tacoOrder">
+      <lable>Taco Shell </lable><input type="text" id="tacoShell" name="shell"></input>
+      </div>
+      
       <button type="submit">Order</button>
     </form>
   </div>
@@ -43,7 +49,7 @@
   </div>
 
 </div>
-6
+
 <script>
   $(function () {
     $(".change-pickUP").on("click", function (event) {
@@ -89,19 +95,5 @@ console.log(newtaco)
       );
     });
 
-    $(".delete-taco").on("click", function (event) {
-      var id = $(this).data("id");
-
-      // Send the DELETE request.
-      $.ajax("/api/tacos/" + id, {
-        type: "DELETE"
-      }).then(
-        function () {
-          console.log("deleted taco", id);
-          // Reload the page to get the updated list
-          location.reload();
-        }
-      );
-    });
   });
 </script>
