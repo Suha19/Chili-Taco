@@ -7,7 +7,7 @@ CREATE TABLE tacos (
   taco_name varchar(30) NOT NULL,
   shell varchar(30) NOT NULL(soft/hard ~ flour/corn),
   vegetarian boolean NOT NULL,
-  picked_up boolean NOT NULL,
+  pickUp boolean NOT NULL,
   PRIMARY KEY(id)
 );
 
