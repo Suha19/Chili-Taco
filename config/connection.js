@@ -10,6 +10,12 @@ connection = mysql.createConnection(process.env.JAWSDB_URL);
   user: "root",
   password: "",
   database: "tacos_db"
+
+  // host: "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  // port: 3306,
+  // user: "f45vouga880xiiow",
+  // password: "f17a2ryhqtryo79d",
+  // database: "rrcf8qgt0kzr8dh1
 });
 };
 // Make connection.
