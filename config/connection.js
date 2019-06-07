@@ -1,23 +1,23 @@
 var mysql = require("mysql");
 
-var connection;
-if (process.env.JAWSDB_URL){
-connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else{
-  connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "",
-  database: "tacos_db"
-
-  // host: "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+// var connection;
+// if (process.env.JAWSDB_URL){
+// connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else{
+  var connection = mysql.createConnection({
+  // host: "localhost",
   // port: 3306,
-  // user: "f45vouga880xiiow",
-  // password: "f17a2ryhqtryo79d",
-  // database: "rrcf8qgt0kzr8dh1
+  // user: "root",
+  // password: "",
+  // database: "tacos_db"
+
+  host: "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  port: 3306,
+  user: "f45vouga880xiiow",
+  password: "f17a2ryhqtryo79d",
+  database: "rrcf8qgt0kzr8dh1"
 });
-};
+// };
 // Make connection.
 connection.connect(function(err) {
   if (err) {
