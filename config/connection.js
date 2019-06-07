@@ -11,11 +11,11 @@ var mysql = require("mysql");
   // password: "",
   // database: "tacos_db"
 
-  host: "lg7j30weuqckmw07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  host: "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "f45vouga880xiiow",
-  password: "f17a2ryhqtryo79d",
-  database: "rrcf8qgt0kzr8dh1"
+  user: "bpygpk98eqqo0nvh",
+  password: "u39mme9m88ksfyw2",
+  database: "ue0w6rf8ccvqp8df"
 });
 // };
 // Make connection.
